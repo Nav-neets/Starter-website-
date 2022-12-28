@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <style>
+        body{
+
+            background-color: powderblue;
+
+        }
+        .Container{
+
+            width: 482px;
+            border: 1px solid black;
+            padding: 40px;
+            margin: auto;
+            border-radius: 15px;
+            background-color: gray;
+            font-weight: bold;
+            text-align: center;
+            height: 160px;
+            position: relative;
+            top: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .sub-clicker-text{
+
+            font-size: 14px;
+            font-weight: lighter;
+
+        }
+
+        .increment-button{
+            background-color: lightblue;
+            border: 1px solid white;
+            border-radius: 6px;
+            height: 28px;
+            cursor: pointer;
+            margin-bottom: 33px;
+            font-size: 20px;
+            width: 130px;
+            height: 35px;
+            
+        }
+
+       .increment-button:hover {
+        background-color: #e0e0e0;
+        transition-duration: 0.4s;
+        }
+
+        .My_div{
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: gray;
+            font-weight: bold;
+            text-align: center;
+            height: auto;
+            margin-top: 50px;
+            width: 576px;
+            margin-left: -50px;
+            font-weight: lighter;
+        }
+
+       .ListButton{
+        background-color: lightblue;
+        border: 1px solid white;
+        border-radius: 6px;
+        height: 30px;
+        width: 80px;
+        cursor: pointer;
+        font-size: 20px;
+       
+       } 
+
+       .ListButton:hover{
+        background-color: #e0e0e0;
+        transition-duration: 0.4s;
+       }
+
+
+
+       .Space{
+        text-align: center ;
+        padding-left: 165px;
+        padding-right: 200px;
+
+       }
+
+
+       
+
+
+      
+       
+       
+
+       
+ 
+    </style>
+    
+    
+    
+    <div class="Container" >
+    
+        <h1 style="margin-top: -35px;" >Clicker</h1>
+
+        <h3 class = "sub-clicker-text" >Click the button to increase the counter</h3>
+        
+        <h1 id="incrementButton">0</h1>
+        
+        <button class="increment-button" onclick="incrementButton()">Increment</button>
+
+
+        <div class="My_div">
+
+            <h1 style="font-weight: lighter;">List</h1>
+
+            <h3 class = "sub-clicker-text" style="font-weight: lighter;">Enter some text and press Add to add items to the list</h3>
+            
+            <input type="text" id="myText" style="font-size: 24px; border-radius: 6px; border: 1px white; height: 35px;" > 
+           
+            <button class="ListButton" onclick="ListButton()">Add</button>
+            
+         <div class="Space"> 
+            <ul  id = "list">
+
+                <li > Text </li> 
+                
+            </ul>
+
+        </div>  
+        
+        </div>
+
+        <script src="llist_buton.js"></script>
+        <script src="increment_button.js" ></script>
+        
+    </div>
+  
+   
+</body>
+</html>
